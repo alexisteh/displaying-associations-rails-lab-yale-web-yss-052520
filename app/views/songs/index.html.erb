@@ -1,0 +1,10 @@
+<h1>All Songs</h1>
+
+<ul>
+<%@songs.each do |s|%>
+    <li>
+        <%words = s.artist.name + " - " + s.title%> 
+        <%=link_to words, song_path(s)%> 
+    </li>
+<%end%> 
+</ul>
